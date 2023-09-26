@@ -1,0 +1,29 @@
+{
+  "name": "smule",
+  "version": "1.0.0",
+  "description": "**Overview** Smule is a Karaoke app. You can sing your favorite songs with music & scrolling lyrics (link).  Some of the major features this app has :   1. Login  2. Feed - Your feed  3. Explore - Discover new music, performances, groups, and challenges  4. Songbook - Find your favorite songs and listen to hot recordings from the    community  5. Activity - Notifications, Invites, News  6. Profile - Edit profile, Playlists, Channel, Invites, About  7. Messages  8. Search - songs, singers, invites  9. Settings  10. Any common features or others",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "wdio": "wdio run ./wdio.conf.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@wdio/cli": "^8.16.14"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.0",
+    "@babel/preset-env": "^7.22.20",
+    "@babel/register": "^7.22.15",
+    "@wdio/allure-reporter": "^8.16.14",
+    "@wdio/appium-service": "^8.16.14",
+    "@wdio/local-runner": "^8.16.14",
+    "@wdio/mocha-framework": "^8.16.14",
+    "@wdio/spec-reporter": "^8.16.12",
+    "appium-uiautomator2-driver": "^2.29.10",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  }
+}
