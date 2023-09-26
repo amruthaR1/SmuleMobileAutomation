@@ -14,7 +14,7 @@ config.capabilities = [
     "appium:deviceName": "iphonetest",
     "appium:platformVersion": "16.4",
     "appium:automationName": "XCUITest",
-    "appium:app": "/Users/testvagrant/Downloads/smule.ipa",
+    "appium:app": path.join(process.cwd(), "app/ios/smule.ipa"),
   },
 ];
 

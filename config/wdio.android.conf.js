@@ -13,8 +13,9 @@ config.capabilities = [
     "appium:platformName": "Android",
     "appium:deviceName": "Pixel_3",
     "appium:platformVersion": "11.0",
-    "appium:app": "/Users/testvagrant/Downloads/smule.apk",
+    "appium:app": path.join(process.cwd(), "app/android/smule.apk"),
     "appium:automationName": "UiAutomator2",
+    "appium:autoGrantPermissions": true,
   },
 ];
 
