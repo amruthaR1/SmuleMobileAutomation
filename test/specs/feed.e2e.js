@@ -34,9 +34,9 @@ describe("Feed", () => {
 
     await profileIcon.click();
 
-    const text = await $('//*[@text="1"]').getText();
+    const text = await $('//*[@text="2"]').getText();
 
-    expect(text).to.be.equal("1");
+    expect(text).to.be.equal("2");
     const following = await $('//*[@text="following"]');
     await following.click();
 

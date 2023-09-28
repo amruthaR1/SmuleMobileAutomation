@@ -1,4 +1,4 @@
-const credential = require("../../credentials.json");
+const credential = require("../../data/credentials.json");
 const LOGIN = require("../pageobjects/login.screen");
 const chai = require("chai");
 const expect = chai.expect;

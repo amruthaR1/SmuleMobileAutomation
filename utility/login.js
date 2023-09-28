@@ -1,5 +1,5 @@
 const LOGIN = require("../test/pageobjects/login.screen");
-const credential = require("../credentials.json");
+const credential = require("../data/credentials.json");
 
 const logIn = async () => {
   await LOGIN.selectLanguage("English");
