@@ -1,7 +1,7 @@
 const chai = require("chai");
 const expect = chai.expect;
 const logIn = require("../../utility/login");
-const message = require("../../data/message.json");
+const testData = require("../../data/testData.json");
 const MESSAGE = require("../pageobjects/message.screen");
 
 describe("Message", () => {
@@ -31,10 +31,10 @@ describe("Message", () => {
   it("should message the selected user", async () => {
     //action
     await MESSAGE.moveForwardToSendMessage();
-    await MESSAGE.sendMessage(message.hii);
+    await MESSAGE.sendMessage(testData.messageToSend);
 
     //assert
     const textBubbleText = await MESSAGE.sentMessageText();
-    expect(textBubbleText).to.be.equal(message.hii);
+    expect(textBubbleText).to.be.equal(testData.messageToSend);
   });
 });

@@ -1,4 +1,4 @@
 /node_modules
 /allure-results
-data
+data/credentials.json
 /app
