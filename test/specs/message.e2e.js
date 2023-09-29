@@ -18,7 +18,7 @@ describe("Message", () => {
     await driver.pause(10000);
   });
 
-  it("should select the user to send message", async () => {
+  it("2. should select the user to send message", async () => {
     //action
     await MESSAGE.startNewChat();
     await MESSAGE.selectUserToSendMessage();
@@ -28,7 +28,7 @@ describe("Message", () => {
     expect(isUserSelected).to.be.equal("true");
   });
 
-  it("should message the selected user", async () => {
+  it("3. should message the selected user", async () => {
     //action
     await MESSAGE.moveForwardToSendMessage();
     await MESSAGE.sendMessage(testData.messageToSend);

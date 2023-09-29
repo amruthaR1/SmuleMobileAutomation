@@ -1,0 +1,61 @@
+**/test/specs/login.e2e.js**
+    Positive:
+        3. Should log in when valid credentials are entered
+                - Logs in
+    Negative:
+        1. Should enter invalid email and check if the next button is enabled
+                - checks whether can go to next screen after entering invalid email
+        2. should enter invalid password and check for error message
+                - checks if error message pops up
+
+**/test/specs/feed.e2e.js**
+    Positive:
+        1. should click on feed
+            - checks if it goes to feed screen after clicking on feed
+        2. Should play the song in the feed
+            - checks if the song is playing when a song in feed is being played
+        3. Should follow a person and check if the count of followers incresed
+            - checks if the followers number is increased in profile screen after following a person in feed.
+    Negative:
+
+**/test/specs/message.e2e.js**
+    Positive:
+        1. should go to message screen
+            - checks if it goes to messages screen after clicking on messages
+        2. should select the user to send message
+            - checks if the user selected to message is selected.
+        3. should message the selected user
+            - sends a message and checks if the message is sent
+    Negative:
+
+**/test/specs/profile.e2e.js**
+    Positive:
+        1. should go to profile screen
+            - checks if it goes to messages screen after clicking on messages
+        2. should open menu options
+            - checks if the menu options pops up after clicking menu button
+        3. Should edit Profile's bio
+            - goes to edit page and edits user's bio and checks if the bio is updated
+        4. Should go to Invite
+            - checks if it goes to messages screen after clicking on messages
+        5. Should go to Playlists
+            - checks if it goes to messages screen after clicking on messages
+        6. Should go to About
+            - checks if it goes to messages screen after clicking on messages
+    Negative:
+
+**/test/specs/songbook.e2e.js**
+    Positive:
+        1. should sing a song
+            - it records a song and checks whether the song is saved
+    Negative:
+
+**/test/specs/searchSong.e2e.js**
+    Positive:
+        1. should search a song
+            - searches a song and checks the searched song and suggested song are similar
+    Negative:
+
+
+
+        

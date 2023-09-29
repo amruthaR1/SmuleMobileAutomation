@@ -9,7 +9,7 @@ describe("Profile", () => {
     await logIn();
   });
 
-  it("should go to profile screen", async () => {
+  it("1. should go to profile screen", async () => {
     //action
     PROFILE.goToProfileScreen();
 
@@ -17,7 +17,7 @@ describe("Profile", () => {
     expect(await PROFILE.isUserNameDisplayed()).to.be.equal(true);
   });
 
-  it("should open menu options", async () => {
+  it("2. should open menu options", async () => {
     //action
     await PROFILE.goToMenu();
 
@@ -26,7 +26,7 @@ describe("Profile", () => {
     expect(isMenuOptionsDisplayed).to.be.true;
   });
 
-  it("Should edit Profile's bio", async () => {
+  it("3. Should edit Profile's bio", async () => {
     //action
     await PROFILE.clickOnEditProfile();
     await PROFILE.goToBio();
@@ -39,7 +39,7 @@ describe("Profile", () => {
     expect(newBioText).to.be.equal(testData.newBio);
   });
 
-  it("Should go to Invite", async () => {
+  it("4. Should go to Invite", async () => {
     //action
     await PROFILE.goToInvites();
 
@@ -48,7 +48,7 @@ describe("Profile", () => {
     expect(isInvitesElmentSelected).to.be.equal("true");
   });
 
-  it("Should go to Playlists", async () => {
+  it("5. Should go to Playlists", async () => {
     //action
     await PROFILE.goToPlaylists()
 
@@ -57,7 +57,7 @@ describe("Profile", () => {
     expect(isPlaylistsElementSelected).to.be.equal("true");
   });
 
-  it("Should go to About", async () => {
+  it("6. Should go to About", async () => {
     //action
     await PROFILE.goToAbout();
 

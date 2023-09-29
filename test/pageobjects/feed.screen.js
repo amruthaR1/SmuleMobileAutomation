@@ -40,6 +40,18 @@ class Feed {
     await followButton.waitForExist({ timeout: 5000 });
     await followButton.click();
   }
+
+  async getFollowingCount(){
+    await $('//*[@resource-id="com.smule.singandroid:id/left_button"]').click();
+
+    const profileIcon = await $(
+      '//*[@resource-id="com.smule.singandroid:id/menu_item_profile"]'
+    );
+    await profileIcon.waitForExist({ timeout: 15000 });
+
+    await profileIcon.click();
+    return await $('//*[@text="2"]').getText();
+  }
 }
 
 module.exports = new Feed();

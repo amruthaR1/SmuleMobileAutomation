@@ -8,7 +8,7 @@ describe("Songbook", () => {
     await logIn();
   });
 
-  it("should sing a song", async () => {
+  it("1. should sing a song", async () => {
     //action
     await SONGBOOK.goToSongBookScreen();
     await SONGBOOK.clickFree();
