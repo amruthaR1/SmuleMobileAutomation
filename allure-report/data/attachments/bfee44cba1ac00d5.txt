@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//*[@resource-id=\"com.smule.singandroid:id/search_edit_text\"]"
+}

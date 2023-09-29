@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//*[@resource-id=\"com.smule.singandroid:id/grp_action_sheet\"]"
+}

@@ -5,7 +5,7 @@ const { config } = require("./wdio.shared.conf");
 
 config.port = 4723;
 config.runner = "local";
-config.specs = ["../test/specs/**/searchSong.e2e.js"];
+config.specs = ["../test/specs/**/songbook.e2e.js"];
 
 config.capabilities = [
   {
